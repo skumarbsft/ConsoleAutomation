@@ -1,10 +1,10 @@
 *** Settings ***
-Resource  Resources/PO/LandingPage.robot
-Resource  Resources/PO/TopNav.robot
-Resource  Resources/PO/SearchResults.robot
-Resource  Resources/PO/Product.robot
-Resource  Resources/PO/Cart.robot
-Resource  Resources/PO/SignIn.robot
+Resource  ../Resources/PO/LandingPage.robot
+Resource  ../Resources/PO/TopNav.robot
+Resource  ../Resources/PO/SearchResults.robot
+Resource  ../Resources/PO/Product.robot
+Resource  ../Resources/PO/Cart.robot
+Resource  ../Resources/PO/SignIn.robot
 
 *** Keywords ***
 Search for Products
@@ -24,3 +24,5 @@ Add Product to Cart
 Begin Checkout
     Cart.Proceed to Checkout
     SignIn.Verify Page Loaded
+    
+    #test#
